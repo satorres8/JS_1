@@ -1,0 +1,16 @@
+<html>
+    <head> <title>Mouse coordinates</title> </head>
+    <body>
+        <div id="moveArea" style="width: 200px; height: 200px; background-color: lightcoral;"></div>
+    
+        <script>
+        const moveArea = document.getElementById('moveArea');
+    
+        moveArea.addEventListener('mousemove', function(event) {
+            console.log(`Mouse coordinates - X: ${event.clientX}, Y: ${event.clientY}`);
+        });
+        </script>
+        
+    </body>
+</html>
+
