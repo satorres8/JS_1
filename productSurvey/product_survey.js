@@ -15,11 +15,20 @@ function submitFeedback() {
     document.getElementById('userProductChoice').innerHTML = productType;
     document.getElementById('userFeedback').innerHTML = feedback;
 
+    document.getElementById('main').style.display = 'none';
     document.getElementById('userInfo').style.display = 'block';
+    document.getElementById('userExperience').style.display = 'block';
     alert('Thank you for your valuable feedback')
 }
 
+function submitFinal() {
+    alert('Thank you for providing your feedback. We will get back to you soon.')
+    document.getElementById('userInfo').style.display = 'none';
+    location.reload();
+}
+
 const submitButton=document.getElementById('submitBtn');
+const submitF=document.getElementById('feedbackBtn');
 
 submitButton.onclick = submitFeedback;
 document.addEventListener('keydown', function(event) {
@@ -27,3 +36,5 @@ document.addEventListener('keydown', function(event) {
       submitFeedback();
     }
   });
+
+submitF.onclick = submitFinal;

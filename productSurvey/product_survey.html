@@ -4,6 +4,7 @@
   <title>Luxury Brand Feedback</title>
 </head>
 <body>
+<div id="main">
   <h1>Welcome to Luxury Brand Products Feedback</h1>
   <h2>Provide Your Feedback</h2>
   <label for="name">Name:</label><br>
@@ -25,6 +26,7 @@
   <label for="feedbackText">Feedback:</label><br>
   <textarea id="feedbackText" rows="5" cols="30" placeholder="Enter your feedback here" required></textarea><br>
 <button id="submitBtn">Submit Feedback</button>
+</div>
 <hr>
 <div id="userInfo" style="display: none;">
   <h2>User Information:</h2>
@@ -34,6 +36,12 @@
   <p>Job: <span id="userJob"></span></p>
   <p>Designation: <span id="userDesignation"></span></p>
   <p>Feedback for  <span id="userProductChoice"></span>: <span id="userFeedback"></span></p>
+</div>
+<div id="userExperience" style="display: none;"> 
+    <h2>User Experience:</h2>
+    <label for="userExp">Feedback:</label><br>
+    <textarea id="userExp" rows="5" cols="30" placeholder="Enter your feedback here" required></textarea><br>
+    <button id="feedbackBtn"> Submit </button>
 </div>
 <script src="./product_survey.js"></script>
 </body>
